@@ -1,0 +1,130 @@
+body {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	font-family: 'Times New Roman', Times, serif;
+	background-color: #DCE2F0;
+}
+
+input::-moz-focus-inner { 
+	border: 0; 
+  }
+
+h1{
+	text-align: center;
+	color: #ADEFD1;
+	background-color: #00203F;
+	padding: 20px;
+}
+
+.grid-box, .joueur1, .joueur2 {
+	font-size: 35px;
+	padding: 15px 25px;
+	width: 80px;
+	height: 80px;
+	margin:0px;
+	background-color: #FCFCFC;
+	outline: none;
+}
+
+h2{
+	margin: 10px 0 10px 30px;
+}
+
+.submit-button{
+	background-color: #00203F;
+	color: #77D2DA;
+}
+
+p{
+	margin: 0px 30px 0px 30px;	
+}
+
+.milieu{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.carte-score {
+	width: 130px;
+	margin-left: 630px;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+.fin{
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 20px;
+	width: 500px;
+}
+
+
+
+.etape{
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+
+a {
+   outline: 0;
+}
+
+.submit-button {
+	margin-top: 20px;
+	width: 280px;
+}
+.espace-jeu {
+	margin:0 auto;
+	text-align: center;
+	padding-top: 20px; 
+}
+
+.options-jeu {
+	border-bottom: 1px dashed #CFCFCF;
+	padding-bottom: 20px;
+}
+
+.tableau-jeu {
+	margin-top: 25px;
+	padding: 10px;
+}
+
+.j1{
+	width: 130px;
+	text-align: center;
+	background-color: #EF8B44;
+}
+.j2{
+	background-color: #3B7EF4;
+	width: 130px;
+	margin-top: 5px;
+}
+
+.col1{
+	color: black;
+}
+
+
+.joueur1 {
+	background: radial-gradient(#F6D06E, #EF8B44);
+	color: #FFF;
+}
+.joueur2 {
+	background: radial-gradient(#77D2DA, #3B7EF4);
+	color: #FFF;
+}
+
+.options-jeu select, .options-jeu input  {
+	border: 1px solid #333;
+	padding: 10px;
+	margin-right: 10px;
+	outline: none;
+}
+
+
+.carte-score span {
+	font-weight: normal;
+}
+

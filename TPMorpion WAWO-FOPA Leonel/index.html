@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Le jeu du Morpion</title>
+	<script type="text/javascript" src="scripts.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Bienvenue dans le jeu du Morpion</h1>
+<h2>C'est quoi le morpion(le jeu hein pas l'insecte)?</h2>
+<P> &emsp; Le morpion est un jeu de réflexion se pratiquant à deux joueurs au tour par tour et dont le but est de créer le premier un alignement sur une grille.</P>
+<h2>Comment jouer au morpion ?</h2>
+<p>&emsp;Pour jouer une partie de morpion, il suffit de tracer sur une feuille blanche une grille
+	de 3 cases sur 3 (selon les variantes, il est possible d’augmenter le nombre de cases).
+	Le but du jeu est d’aligner avant son adversaire 3,4,5(selon les variantes) symboles identiques
+	horizontalement, verticalement ou en diagonale.
+	Chaque joueur a donc son propre symbole, généralement une croix pour l’un et un
+	rond pour l’autre, ici nous utliserons un X et un Y. La partie se termine quand l’un des joueurs à aligner 3 symboles ou
+	quand la grille est complétée sans vainqueur. Il y a alors égalité.</p>
+<h2>Comment gagner une partie de morpion ?</h2>
+<p>&emsp;Le premier joueur à aligner 3, 4 ou 5  symboles identiques gagne la partie. Attention, le joueur
+	qui débute est toujours avantagé pour gagner. Pensez donc à alterner ! Sur ce site vous avez le choix entre jouer contre un ami ou contre l'ordinateur.</p>
+
+<h2>Maintenant à vous de jouer!</h2>
+<p>Pour cela, suivez les étapes qui suivent. Les scores s'affichent sous la grille après chaque partie.</p>
+
+<p class="etape">1. Choisir la configuration de la grille.</p>
+	<div class="espace-jeu">
+	<div class="options-jeu">
+		<select name="plateau" id="plateau" onchange="resetAIButton()">
+			<option value="3">Plateau 3 x 3 </option>
+			<option value="4">Plateau 4 x 4 </option>
+			<option value="5">Plateau 5 x 5 </option>
+		</select>
+		<p class="milieu">2. Laisser coché pour jouer contre l'ordinateur ou décocher pour jouer à deux.</p>
+		<input type="checkbox" name="robot" checked="true" id="robot"> Jouer avec l'ordinateur. <br/>
+		<p class="milieu">3. Si vous êtes prêts, cliquez sur "Lancer le jeu".</p>
+		<input type="submit" value="Lancer le jeu" onclick="generateGame()" class="submit-button"> 
+	</div>
+	<div id="tableau-jeu" class="tableau-jeu">
+	</div>
+	<p class="fin">4. A la fin d'une partie, une fenetre de dialogue s'affiche pour donner le resultat. Cliquer sur OK ou appuyer sur la touche entrée du clavier pour engristrer le score de la partie terminée. </p>
+	<p class="milieu">5. cliquer à nouveau sur "Lancer le jeu" pour faire une nouvelle partie aves la meme configuration</p>
+	<p class="milieu">Score des parties enregistrées:</p>
+	<div class="carte-score">
+		<p class="j1"> Score joueur 1: <span class="col1" id="score-X">0</span></p>
+		<p class="j2"> Score joueur 2: <span class="col1" id="score-Y">0</span></p> 
+	</div>
+	<p class="fin">6. Pour faire une nouvelle manche et remettre les scores à zéro ou changer de configuration, recharger la page et reprendre les étapes depuis le debut. </p>
+</div>
+
+</body>
+</html>
